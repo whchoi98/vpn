@@ -543,7 +543,7 @@ Resources:
             DeleteOnTermination: true
       Tags:
         - Key: Name
-          Value: !Sub '${AWS::StackName}-Public-10.12.11.100'
+          Value: !Sub '${AWS::StackName}-OpenSWAN-10.12.11.100'
       UserData:
         Fn::Base64:
           Fn::Sub: |
