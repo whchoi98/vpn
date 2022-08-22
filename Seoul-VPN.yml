@@ -936,3 +936,9 @@ Outputs:
     Value: !Ref PrivateSubnetB
     Export:
       Name: !Sub "${AWS::StackName}-PrivateSubnetB"
+
+  OpenSwanInstance1:
+    Description: OpenSwanPublicIP
+    Value: !GetAtt OpenSwanInstance1.PublicIp
+    Export:
+      Name: !Sub "OpenSwanPublicIP"
